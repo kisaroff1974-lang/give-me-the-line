@@ -1,1 +1,9 @@
-{\n  "name": "give-me-the-line",\n  "version": "1.0.0",\n  "description": "A TypeScript project for give-me-the-line",\n  "main": "index.js",\n  "scripts": {\n    "test": "echo 'Error: no test specified' && exit 1"\n  },\n  "author": "kisaroff1974-lang",\n  "license": "ISC",\n  "devDependencies": {\n    "typescript": "^4.0.0"\n  }\n}
+{
+  "name": "give-me-the-line",
+  "private": true,
+  "workspaces": ["client"],
+  "scripts": {
+    "dev": "npm --workspace client run dev",
+    "build": "npm --workspace client run build"
+  }
+}
